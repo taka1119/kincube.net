@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+
+/* all */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  color: #333;
+}
+
+li {
+  list-style: none;
+  color: #333;
+}
+
+a {
+  color: #333;
+  transition: opacity 0.4s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+}
+.header .header-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.header-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* about */
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.container .ttl {
+  text-align: center;
+  margin: 60px 0 20px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.container .about {
+  margin: 0 auto;
+}
+
+.about-img img {
+  width:80%;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+
+}
+
+.about-img .pc {
+  display: block; 
+}
+
+.about-img .sp {
+  display: none;
+}
+
+.about h3 {
+  margin: 20px 0 10px;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.about-kincube {
+  display: inline-block;
+  border: 2px double #333;
+  padding: 10px 60px;
+  margin-bottom: 60px;
+}
+
+.about-kincube li {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* profiel */
+
+.prf {
+  margin: 30px auto 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prf img {
+  width: 50%;
+  margin: 0 20px;
+}
+
+.prf-text {
+  margin-right: 20px;
+  width: 50%;
+  border: 2px double #333;
+  padding: 16px;
+}
+
+.prf-text h3 {
+  margin-bottom: 8px;
+}
+
+/* goods */
+
+.goods {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-content {
+  margin: 30px auto 60px;
+}
+
+.item-content img {
+  width: 300px;
+  height: 400px;
+}
+
+.item-content .item-ttl {
+  margin: 8px 0;
+}
+
+/* footer */
+
+.footer {
+  background: #333;
+  color: #fff;
+}
+
+.sns {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  transition: opasity 0.3s;
+}
+
+.sns img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+}
+
+.sns li:last-child {
+  margin-right: 16px;
+}
+.sns a:hover {
+  opacity: 0.6;
+}
+
+.footer .copyright {
+  display: block;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+/* media */
+
+@media (max-width:768px) {
+  .header-logo img {
+    width: 60%;
+  }
+
+  .about-img .pc {
+    display: none; 
+  }
+  
+  .about-img .sp {
+    display: block;
+  }
+
+  .about h3 {
+    font-size: 18px;
+  }
+  
+  .about-kincube {
+    padding: 10px 40px;
+  }
+
+  .about-kincube li {
+    font-size: 14px;
+  }
+
+
+.prf {
+  flex-direction: column;
+}
+
+.prf img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.prf-text {
+  margin-right: 0;
+  width: 80%;
+  border: 2px double #333;
+  padding: 16px;
+}
+
+.prf-text h3 {
+  font-size: 18px;
+}
+
+.prf-text p {
+  font-size: 14px;
+}
+
+.goods {
+  flex-direction: column;
+}
+}
