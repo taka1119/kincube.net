@@ -33,6 +33,10 @@ a:hover {
   opacity: 0.6;
 }
 
+.sma {
+  display: none;
+}
+
 /* header */
 
 .header {
@@ -187,6 +191,10 @@ a:hover {
 /* media */
 
 @media (max-width:768px) {
+  .sma {
+  display: block;
+  }
+  
   .header-logo img {
     width: 60%;
   }
