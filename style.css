@@ -96,6 +96,10 @@ a:hover {
   letter-spacing: 4px;
 }
 
+/* .about h3 .sma {
+  display: none;
+} */
+
 .about-kincube {
   display: inline-block;
   border: 2px double #333;
@@ -192,7 +196,7 @@ a:hover {
 
 @media (max-width:768px) {
   .sma {
-  display: block;
+    display: block;
   }
   
   .header-logo img {
@@ -208,7 +212,7 @@ a:hover {
   }
 
   .about h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .about-kincube {
@@ -216,7 +220,7 @@ a:hover {
   }
 
   .about-kincube li {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
